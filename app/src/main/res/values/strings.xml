@@ -1,0 +1,33 @@
+<resources>
+    <string name="project_name">Проєкт №2</string>
+
+    <string name="database_button">БД</string>
+    <string name="contacts_button">Адресна книга</string>
+    <string name="geoservice_button">Геосервіс</string>
+    <string name="database_description">Виробництво пшениці в Україні. Вибірка та величина для обчислення з варіанту 7.</string>
+    <string name="contacts_description">Контакти та вибірка з варіанту.</string>
+    <string name="geoservice_description">Карта з рухомою точкою.</string>
+    <string name="developer_text">Розробив студент групи ТТП-41 Швець Михайло</string>
+
+    <string name="year_hint">Рік</string>
+    <string name="production_hint">Виробництво пшениці (т)</string>
+    <string name="price_hint">Вартість виробленої пшениці ($)</string>
+    <string name="database_add_text">Додати запис</string>
+
+    <string name="year_text">%d р.</string>
+    <string name="year_text_negative">%d р. до н.е.</string>
+    <string name="production_text">Виробництво пшениці: %d</string>
+    <string name="price_text">Вартість виробленої пшениці: %d</string>
+    <string name="database_selection_text">Роки і величини валового збору, які перевищують %dт</string>
+    <string name="database_selection_value_text">Середньорічна вартість збору = %d</string>
+    <string name="database_delete_text">Видалити запис?</string>
+    <string name="yes">Так</string>
+
+    <string name="selection_contacts_text">Контакти, у яких ім\'я закінчується на "%s"</string>
+
+    <string name="geoservice_text">Маршрут до Факультету комп\'ютерних наук та кібернетики</string>
+
+    <string name="non_zero_int_error">Значення не може бути нулем</string>
+    <string name="positive_int_error">Значення має бути невід\'ємним цілим</string>
+    <string name="empty_row_error">Значення не може бути порожнім рядком</string>
+</resources>

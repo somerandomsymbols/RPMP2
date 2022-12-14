@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity"
+    android:padding="8dp"
+    android:background="@color/purple" >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/database_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/database_button"
+        android:textAlignment="center"
+        android:background="@color/pink"
+        android:gravity="top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/database_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/database_description"
+        android:background="@color/orange"
+        android:gravity="top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/database_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/contacts_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contacts_button"
+        android:textAlignment="center"
+        android:background="@color/pink"
+        android:gravity="top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/database_text_view"/>
+
+    <TextView
+        android:id="@+id/contacts_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/contacts_description"
+        android:background="@color/orange"
+        android:gravity="top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contacts_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/geoservice_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/geoservice_button"
+        android:textAlignment="center"
+        android:background="@color/pink"
+        android:gravity="top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contacts_text_view"/>
+
+    <TextView
+        android:id="@+id/geoservice_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/geoservice_description"
+        android:background="@color/orange"
+        android:gravity="top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/geoservice_button" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:text="@string/developer_text"
+        android:background="@color/blue"
+        android:gravity="bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

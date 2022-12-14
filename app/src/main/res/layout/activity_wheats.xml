@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DatabaseActivity"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/purple">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/database_add_button"
+        android:layout_width="64dp"
+        android:layout_height="0dp"
+        android:layout_gravity="end"
+        android:background="@color/pink"
+        android:text="@string/database_add_text"
+        android:textAlignment="center"
+        android:gravity="top"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/database_price_edit_text" />
+
+    <EditText
+        android:id="@+id/database_year_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:layout_margin="2dp"
+        android:hint="@string/year_hint"
+        android:inputType="numberSigned"
+        android:gravity="top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/database_add_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/database_production_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:layout_margin="2dp"
+        android:inputType="number"
+        android:gravity="top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/database_add_button"
+        app:layout_constraintTop_toBottomOf="@id/database_year_edit_text" />
+
+    <EditText
+        android:id="@+id/database_price_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/orange"
+        android:inputType="number"
+        android:gravity="top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/database_add_button"
+        app:layout_constraintTop_toBottomOf="@id/database_production_edit_text" />
+
+    <TextView
+        android:id="@+id/database_selection_value_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/purple"
+        android:textColor="@color/white"
+        android:gravity="top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/database_price_edit_text" />
+
+    <CheckBox
+        android:id="@+id/database_selection_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:gravity="top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/database_selection_value_text_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/database_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/orange"
+        android:gravity="bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/database_selection_check_box"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
